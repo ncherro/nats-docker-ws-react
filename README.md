@@ -1,7 +1,7 @@
 # NATS + Docker + Websockets + React example
 
-- a NATS server with a websocket tcp relay server proxy
-- a create-react-app that pub / subs from the proxy
+- [NATS server](http://nats.io/) with a [websocket tcp relay](https://github.com/isobit/ws-tcp-relay) proxy
+- [create-react-app](https://github.com/facebookincubator/create-react-app) demo that pub / subs from the proxy
 
 ## Requirements
 
@@ -12,4 +12,5 @@
 - `docker-compose up` to spin up the websocket backend
 - `cd frontend; yarn start` to spin up the React frontend
 
-^ assumes `dockerhost` points to your `docker-machine ip`
+\* assumes `dockerhost` points to your `docker-machine ip`. if not, then update
+`frontend/package.json` and override the `REACT_APP_NATS_HOST` value
