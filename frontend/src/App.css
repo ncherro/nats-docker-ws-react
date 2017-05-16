@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li.me {
+  color: #999;
+}

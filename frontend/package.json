@@ -1,0 +1,21 @@
+{
+  "name": "realtime-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "faker": "^4.1.0",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "websocket-nats": "^0.3.3"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "REACT_APP_CHANNEL=foo REACT_APP_NATS_HOST=dockerhost:4223 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
