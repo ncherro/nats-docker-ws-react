@@ -2,7 +2,7 @@ version: "2"
 
 services:
   nats:
-    image: "nats:0.8.0"
+    image: "nats:0.9.6"
     entrypoint: "/gnatsd -p 4222"
     expose:
       - "4222"

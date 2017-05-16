@@ -1,4 +1,4 @@
-# NATS + Websockets example
+# NATS + Docker + Websockets + React example
 
 - a NATS server with a websocket tcp relay server proxy
 - a create-react-app that pub / subs from the proxy
