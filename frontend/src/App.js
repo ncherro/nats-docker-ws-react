@@ -114,7 +114,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Real timing over NATS</h2>
+          <h2>NATS Chats</h2>
         </div>
         <form onSubmit={this.handleSubmit}>
           <input
