@@ -10,7 +10,8 @@
 ## Running
 
 - `docker-compose up` to spin up the websocket backend
-- `cd frontend; yarn start` to spin up the React frontend
+- `cd frontend; yarn start` to spin up the React frontend at
+  http://localhost:3000
 
 \* assumes `dockerhost` points to your `docker-machine ip`. if not, then update
 `frontend/package.json` and override the `REACT_APP_NATS_HOST` value
