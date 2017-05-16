@@ -90,6 +90,7 @@ class App extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    if (!this.state.value) return;
     this.publish({ type: MT_COMMENT, comment: this.state.value });
     this.setState({ value: '' });
     this.publish({ type: MT_TYPING_STOPPED });
@@ -128,8 +129,13 @@ class App extends Component {
         </form>
         <div>
           <ul>
-            {this.state.messages.map((message) => {
-              return <li className={message.user === this.props.user ? 'me' : 'other'}>{message.comment} - <small>{message.user}</small></li>
+            {this.state.messages.map((message, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className={message.user === this.props.user ? 'me' : 'other'}
+                >{message.comment} - <small>{message.user}</small></li>
+              )
             })}
           </ul>
         </div>

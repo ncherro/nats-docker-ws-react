@@ -9,5 +9,7 @@ services:
   nats_proxy:
     image: "formalibre/ws-tcp-relay"
     command: "ws-tcp-relay -p 4223 nats:4222"
+    depends_on:
+      - nats
     ports:
       - "4223:4223"
