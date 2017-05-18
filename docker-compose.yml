@@ -4,11 +4,10 @@ services:
   nats:
     image: "nats:0.9.6"
     entrypoint: "/gnatsd -p 4222"
-    expose:
-      - "4222"
-  nats_proxy:
-    image: "formalibre/ws-tcp-relay"
-    command: "ws-tcp-relay -p 4223 nats:4222"
+    ports:
+      - "4222:4222"
+  nats-proxy:
+    build: .
     depends_on:
       - nats
     ports:
